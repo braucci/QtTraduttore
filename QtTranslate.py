@@ -11,13 +11,10 @@ class Ui(QWidget):
         super().__init__()
         uic.loadUi('ui.ui', self)
         self.setFixedSize(380, 225)
-    
 
     def pB_traducoClick(self):
 
         try:
-        
-            
             to_Translate = (self.lE_input.text())
             traduzione = t.Translator(to_lang="it")
             result = traduzione.translate(to_Translate)
@@ -25,6 +22,9 @@ class Ui(QWidget):
 
         except:
             print('Valore nel campo non accettato')
+            
+    def cancello(self):
+        self.lE_output.setText("")
 
 
 

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>380</width>
+    <width>386</width>
     <height>225</height>
    </rect>
   </property>
@@ -75,8 +75,41 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>lE_input</sender>
+   <signal>returnPressed()</signal>
+   <receiver>Form</receiver>
+   <slot>pB_traducoClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lE_input</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>cancello()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>318</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>375</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>pB_traducoClick()</slot>
+  <slot>cancello()</slot>
  </slots>
 </ui>
