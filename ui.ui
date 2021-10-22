@@ -54,6 +54,9 @@
       </property>
      </widget>
     </item>
+    <item row="2" column="0">
+     <widget class="QComboBox" name="cB_lingua"/>
+    </item>
    </layout>
   </widget>
  </widget>
@@ -107,9 +110,42 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>cB_lingua</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>cambio_lingua()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>131</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cB_lingua</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>pB_traducoClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>38</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>49</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>pB_traducoClick()</slot>
   <slot>cancello()</slot>
+  <slot>cambio_lingua()</slot>
  </slots>
 </ui>
